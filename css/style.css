@@ -1,0 +1,511 @@
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        font-family: "Roboto";
+        font-size: 15px;
+    }
+    
+    .site-header,
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #4a454b;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding-top: 50px;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    nav a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Roboto";
+        font-size: 15px;
+    }
+    
+    nav a:hover {
+        color: #90d23d;
+    }
+    
+    nav li {
+        margin: 0 40px 0 0;
+    }
+    
+    @media screen and (max-width: 500px) {
+        .logo img {
+            flex-direction: column;
+            margin: 0;
+        }
+        header {
+            flex-direction: column;
+        }
+        header nav ul {
+            flex-direction: column;
+            align-self: center;
+        }
+        header nav ul li {
+            margin: 5px;
+        }
+    }
+    
+    .timer {
+        padding: 110px 0 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #4a454b;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .register {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    
+    .register-text {
+        font-size: 14px;
+        color: rgb(36, 36, 36);
+    }
+    
+    .register-text .welcome {
+        font-size: 50px;
+        font-weight: bolder;
+        margin: 0;
+    }
+    
+    form {
+        width: 430px;
+        height: 530px;
+        box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+    }
+    
+    form .sign-up {
+        font-size: 28px;
+        color: rgb(37, 37, 37);
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    form .footnote {
+        font-size: 14px;
+        color: rgb(108, 108, 108);
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+    }
+    
+    form li {
+        padding: 0 0 20px 0;
+    }
+    
+    form ul {
+        list-style: none;
+        padding-left: 25px;
+    }
+    
+    form input {
+        height: 53px;
+        width: 370px;
+        border-radius: 5px;
+        border: 1px solid #bebebe;
+    }
+    
+    input:hover {
+        border-color: #90d23d;
+    }
+    
+    form input[placeholder] {
+        padding-left: 10px;
+        font-size: 18px;
+        font-family: "Roboto";
+        color: rgb(190, 190, 190);
+    }
+    
+    form input[type="button"] {
+        background-color: #90d23d;
+        color: #fff;
+        font-size: 22px;
+        height: 57px;
+        width: 382px;
+        margin: 10px 0 0 0;
+    }
+    
+    .event-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        padding: 130px 60px 0 60px;
+        color: rgb(36, 36, 36);
+    }
+    
+    .event-items-community:nth-child(1) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    
+    .event-items-talk-shop:nth-child(2) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    
+    .event-items-war-stories:nth-child(3) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    
+    .event-items h1 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 35px;
+    }
+    
+    .event-items p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    table {
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        margin-top: 100px;
+        font-size: 22px;
+    }
+    
+    .table thead {
+        font-size: 30px;
+    }
+    
+    .table tr {
+        height: 75px;
+        vertical-align: middle;
+    }
+    
+    .table .left {
+        text-align: left;
+    }
+    
+    .table .middle {
+        vertical-align: middle;
+    }
+    
+    .table-footer {
+        font-size: 14px;
+        text-align: center;
+        color: rgb(36, 36, 36);
+        text-align: center;
+    }
+    
+    .speakers-main {
+        margin-top: 150px;
+    }
+    
+    .speakers-p {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 0 0 25px 200px;
+    }
+    
+    .speakers-main h6 {
+        font-size: 14px;
+        color: rgb(36, 36, 36);
+        font-weight: 300;
+        margin: 0 0 60px 200px;
+    }
+    
+    .speakers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
+    }
+    
+    .speakers-row1:nth-child(1) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    
+    .flex-item:nth-child(2) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    
+    .flex-item:nth-child(3) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    
+    .square {
+        width: 296px;
+        height: 296px;
+        background: #90d23d;
+        border-radius: 15px;
+        margin: 0 45px 45px 0;
+    }
+    
+    .square-white {
+        width: 296px;
+        height: 296px;
+        background: #fff;
+        border-radius: 15px;
+        margin: 0 45px 45px 0;
+    }
+    
+    .speakers-text {
+        background-image: url('/Users/Pozitiv/Desktop/Meetup - Event PSD Template/images/speakers_background_square.png');
+    }
+    
+    .speakers h5 {
+        font-size: 18px;
+        font-family: "Roboto";
+        color: rgb(254, 254, 254);
+        margin: 36px 0 0 35px;
+    }
+    
+    .speakers-text p {
+        color: rgb(254, 254, 254);
+        font-size: 45px;
+        line-height: 0.956;
+        padding: 35px 0 0 35px;
+    }
+    
+    .speakers-img img {
+        margin: 32px;
+    }
+    
+    .speakers-social {
+        margin: 38px 0 0 35px;
+    }
+    
+    .past-events-main {
+        margin-top: 150px;
+    }
+    
+    .past-events-main p {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 0 0 25px 200px;
+    }
+    
+    .past-events-main h6 {
+        font-size: 14px;
+        color: rgb(36, 36, 36);
+        font-weight: 300;
+        margin: 0 0 60px 200px;
+    }
+    
+    .past-event-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 85%;
+        margin: auto;
+    }
+    
+    .past-event-row-blue:nth-child(1) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        width: 54%;
+        height: 420px;
+        background-color: #3d6ed2;
+    }
+    
+    .past-event-row-green:nth-child(2) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        width: 46%;
+        height: 420px;
+        background-color: #90d23d;
+    }
+    
+    .past-event-row-yellow:nth-child(3) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        width: 46%;
+        height: 420px;
+        background: #ff9d00;
+    }
+    
+    .past-event-row-orange:nth-child(4) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        width: 54%;
+        height: 420px;
+        background: #e0652a;
+    }
+    
+    .button {
+        text-align: center;
+        margin: 100px 0 100px 0;
+    }
+    
+    .button-viewmore {
+        background-color: rgb(55, 55, 55);
+        border-radius: 15px;
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        padding: 10px;
+        text-decoration: none;
+        width: 200px;
+        height: 55px;
+        text-align: center;
+    }
+    
+    .button-viewmore:hover {
+        background-color: #90d23d;
+        text-decoration: none;
+        color: rgb(55, 55, 55);
+    }
+    
+    .button-viewmore:active {
+        position: relative;
+        top: 1px;
+    }
+    
+    .contact {
+        display: flex;
+        width: 100%;
+        height: 660px;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Users/Pozitiv/Desktop/Meetup - Event PSD Template/images/map.png');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .contact-form {
+        position: relative;
+        width: 70%;
+        height: 530px;
+        margin: auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .contact-form-leftpart:nth-child(1) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        text-align: center;
+    }
+    
+    .contact-form-right-part:nth-child(2) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    
+    .contact-form-leftpart p {
+        font-size: 18px;
+        color: rgb(69, 68, 68);
+        line-height: 1.2;
+        margin: 50px 0 30px 0;
+    }
+    
+    .contact-form-leftpart-button {
+        background-color: #90d23d;
+        border-radius: 15px;
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        width: 200px;
+        height: 55px;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .contact-form-leftpart-button:hover {
+        text-decoration: none;
+        background: rgb(55, 55, 55);
+        color: rgb(255, 255, 255);
+    }
+    
+    .contact-form-leftpart-button:active {
+        position: relative;
+        top: 1px;
+    }
+    
+    .form-control {
+        width: 400px;
+        margin-bottom: 30px;
+    }
+    
+    .button-sendmessage {
+        background-color: rgb(55, 55, 55);
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        width: 400px;
+        height: 55px;
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        padding: 10px;
+    }
+    
+    .button-sendmessage:hover {
+        background-color: #90d23d;
+        text-decoration: none;
+        color: rgb(55, 55, 55);
+    }
+    
+    .button-sendmessage:active {
+        position: relative;
+        top: 1px;
+    }
+    
+    footer {
+        height: 220px;
+        width: 100%;
+        background-color: rgb(144, 210, 61);
+        color: rgb(255, 255, 255);
+    }
+    
+    .footer-social-buttons {
+        text-align: center;
+        padding-top: 60px;
+    }
+    
+    footer p {
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+        padding-top: 35px;
+    }

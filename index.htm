@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Meetup - Event</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="#"><img src="images/Envato_BD_Logo.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Event Details </a></li>
+                <li><a href="#">Speakers </a></li>
+                <li><a href="#">Sponsors </a></li>
+                <li><a href="#">Past Events </a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+        </nav>
+        <div class="timer">
+            <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="https://e-timer.ru/js/etimer.js"></script>
+            <script>
+                jQuery(document).ready(function() {
+                    jQuery(".eTimer").eTimer({
+                        etType: 0,
+                        etDate: "02.10.2019.0.0",
+
+                        etTitleSize: 25,
+                        etShowSign: 2,
+                        etSep: ":",
+                        etFontFamily: "Roboto Slab",
+                        etTextColor: "#ffffff",
+                        etPaddingTB: 10,
+                        etPaddingLR: 105,
+
+                        etBorderSize: 2,
+                        etBorderRadius: 19,
+                        etBorderColor: "#90d23d",
+
+                        etLastUnit: 4,
+                        etNumberFontFamily: "Roboto Slab",
+                        etNumberSize: 130,
+                        etNumberColor: "white",
+                        etNumberPaddingTB: 1,
+                        etNumberPaddingLR: 10,
+                        etNumberBorderColor: "white",
+
+                    });
+                });
+            </script>
+            <div class="eTimer"></div>
+        </div>
+    </header>
+    <div class="register">
+        <div class="register-text">
+            <p class="welcome">Welcome!</p>
+            <p>The biggest envato community meetup in Bangladesh is happening right now! And <br> you can be a part of it too... <br> <br> Get together with members of the Envato community to talk shop, trade war stories,<br> make new friends and see the
+                faces behind the avatars. Whether you’re an author on <br> Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited! <br><br> It doesn’t matter as long as you have the motivation and interest to work at the envato
+                <br> and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;) <br> Head over and fill up the sign up form here so that we can keep track of our guests.<br> Don’t forget to register on our <b>nvite</b> page
+                here too!</p>
+        </div>
+        <form action="">
+            <p class="sign-up">Sign up for our event</p>
+            <ul>
+                <li><input type="text" id="name" name="name" value="" size="" maxlength="15" class="" placeholder="Name" title="name" pattern="" required="required" /></li>
+                <li><input type="text" id="mail" name="mail" value="" size="" maxlength="20" class="" placeholder="Enter your email" title="email" pattern="" required="required" /></li>
+                <li><input type="number" id="phone" name="" value="" size="" maxlength="11" class="" placeholder="Phone number" title="" pattern="[0-9]{11}" required="required" /></li>
+                <li><input type="text" id="username" name="username" value="" size="" maxlength="15" class="" placeholder="Username" title="username" pattern="" required="required" /></li>
+                <li><input type="button" value='Let me in!'> </li>
+                <p class="footnote">Hurry up, Limited seats availble<br> *we will never spam your email</p>
+            </ul>
+        </form>
+    </div>
+    <div class="event-items">
+        <div class="event-items-community">
+            <p><img src="images/community.png"></p>
+            <h1>Community</h1>
+            <p>Meet the Community you’ve always talked with,<br> in real life! This meetup will be all about authors <br> engaging each other with interesting coversation <br>and topics. We will have loads of fun.</p>
+        </div>
+        <div class="event-items-talk-shop">
+            <p><img src="images/talk_shop.png"></p>
+            <h1>Talk Shop</h1>
+            <p>In this meetup you will get to know the <br> marketplaces better, because that’s why were all <br> here for right? Learn a few tips and tricks from <br>experienced authors from all over the country.</p>
+        </div>
+        <div class="event-items-war-stories">
+            <p><img src="images/war_stories.png"></p>
+            <h1>War Stories</h1>
+            <p>Gather round fellow authors!<br> Hear the stories of success from your favorite <br> authors and learn how they we able to tackle <br> their problems and become successful.</p>
+        </div>
+    </div>
+    <table class="table table-striped table-borderless table-dark table-hover col-md-7">
+        <thead>
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col" class="left middle">Stuff that will happen</th>
+                <th scope="col"></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="middle">10am - 12pm</th>
+                <td class="left middle">Introduction and presentations about Envato</td>
+                <td class="middle"><img src="images/table_plus_icon.png"></td>
+
+            </tr>
+            <tr>
+                <th scope="row" class="middle">12am - 02pm</th>
+                <td class="left middle">Sessions by honorable guests and Speakers</td>
+                <td class="middle"><img src="images/table_plus_icon.png"></td>
+
+            </tr>
+            <tr>
+                <th scope="row" class="middle">02pm - 03pm</th>
+                <td class="left middle">Break and Mingle time with the authors</td>
+                <td class="middle"><img src="images/table_plus_icon.png"></td>
+
+            </tr>
+            <tr>
+                <th scope="row" class="middle">03pm - 05pm</th>
+                <td class="left middle">Portfolio Review, Rewards and Ending Presentation</td>
+                <td class="middle"><img src="images/table_plus_icon.png"></td>
+
+            </tr>
+        </tbody>
+
+    </table>
+    <p class="table-footer">Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it <br>within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm
+        could it do? :)</p>
+    <div class="speakers-main">
+        <p class="speakers-p">Speakers</p>
+        <h6>Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects <br> regarding being a digital product author, working at envato and marketing your business. <br>Hope you will have a great time listening to our presentations!</h6>
+        <div class="speakers">
+            <div class="speakers-row1">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="speakers-row2">
+                <div class="square speakers-text">
+                    <p>Shahriyer Shuvo</p>
+                    <h5>More about selling in the <br> Envato Marketplaces</h5>
+                    <div class="speakers-social">
+                        <a href="http://www.facebook.com"><img src=" images/speakers_facebook.png " alt="facebook "></a>
+                        <a href="http://www.twitter.com"><img src="images/speakers_twitter.png " alt="twitter "></a>
+                        <a href="http://www.behance.com"><img src="images/speakers_behance.png " alt="behance "></a>
+                        <a href="http://www.dribbble.com"><img src="images/speakers_dribbble .png " alt="dribbble "></a>
+                    </div>
+                </div>
+                <div class='square-white speakers-img'><img src="images/speakers_peace.png "></div>
+                <div class="square "></div>
+            </div>
+            <div class="speakers-row3 ">
+                <div class="square "></div>
+                <div class="square "></div>
+                <div class="square "></div>
+            </div>
+        </div>
+    </div>
+    <div class="past-events-main ">
+        <p> Past event</p>
+        <h6>Check out the photos of our previous events where we rocked with a lot of Famous and <br> enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)</h6>
+
+    </div>
+    <div class="past-event-row ">
+        <div class="past-event-row-blue "></div>
+        <div class="past-event-row-green "></div>
+        <div class="past-event-row-yellow "></div>
+        <div class="past-event-row-orange "></div>
+    </div>
+    <div class="button ">
+        <a href="# " class="button-viewmore ">View More</a>
+    </div>
+    <div class="contact">
+        <div class="contact-form">
+            <div class="contact-form-leftpart">
+                <img src="images/contact_icon.png" alt="">
+                <p>Lorem Ipsum Avenue, 420/2 elm <br> street, Melbourne, Sydney - 2122, <br> Kingdom of Australia</p>
+                <a href="#" class="contact-form-leftpart-button">View Map</a>
+            </div>
+            <div class="contact-form-right-part">
+                <input class="form-control form-control-lg" type="text" placeholder="E-mail">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Type your message"></textarea>
+                <a href="# " class="button-sendmessage">Send Message</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-social-buttons">
+            <a href="http://www.facebook.com"><img src="images/footer-facebook.png" alt="facebook"></a>
+            <a href="http://www.twitter.com"><img src="images/footer-twitter.png" alt="twitter"></a>
+            <a href="http://www.linkedin.com"><img src="images/footer-linkedin.png" alt="linkedin"></a>
+            <a href="https://plus.google.com/discover"><img src="images/footer-google plus .png" alt="google plus"></a>
+            <a href="https://www.tumblr.com/"><img src="images/footer-tumblr.png" alt="tumblr"></a>
+        </div>
+        <p>Hope we see you at the event! <br> All Rights Reserved. Envato Bangladesh © 2015</p>
+    </footer>
+</body>
+
+</html>
